@@ -81,22 +81,6 @@ a:hover {
 
     /*since we are here, we can style it a little bit!*/
     padding: 2vw;
-    font-size: 3vh;
-    background-color: #afe0ff;
-    border: none;
-
-    /*outline none removes the default blue border that appears anytime you click on the button*/
-    outline: none;
-
-    cursor: pointer;
-    align-self: flex-start;
-  }
-}
-
-button {
-  display: none;
-}
-
 #hondaHeader {
   margin-top: 15px;
   margin-left: 50px;
