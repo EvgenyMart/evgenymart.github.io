@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactUsStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="form">
+      <form action="">
+        <form action="">
+          <div>
+            <h3>
+              Please fill the following information and we will back to you
+              shortly.
+            </h3>
+            <div>
+              <label for="firstName">First Name:</label>
+              <input type="text" name="FirstName" id="firstName" required />
+            </div>
+            <div>
+              <label for="secondName">Second Name:</label>
+              <input type="text" name="secondName" id="secondName" required />
+            </div>
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="tel" name="phoneNumber" id="phoneNumber" />
+            </div>
+            <div>
+              <label for="reason">Reason:</label>
+              <select name="reason" id="reason" required>
+                <option value="equipment issues">Equipment issues</option>
+                <option value="order">I want to make an order by phone</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <input
+                type="submit"
+                value="Submit"
+                class="btn"
+                onclick="submitMessage()"
+              />
+              <input type="reset" class="btn" />
+            </div>
+          </div>
+        </form>
+      </form>
+    </div>
+    <script src="contactUs.js"></script>
+  </body>
+</html>

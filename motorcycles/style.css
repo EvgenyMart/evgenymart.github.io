@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerBike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 20%;
+  max-height: 100%;
+}
+
+body {
+  background-color: olive;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
+
+ul li {
+  float: left;
+  margin-top: 10px;
+  text-align: center;
+}
+
+ul li a {
+  color: white;
+  display: block;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+}
+
+ul li ul li {
+  float: none;
+}
+
+ul li ul {
+  display: none;
+}
+
+ul li:hover ul {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+}
+
+a:hover {
+  color: crimson;
+  transition: 0.5s;
+}
+
+#productsSection {
+  display: block;
+}
+
+#hondaHeader {
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+.product {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.pic {
+  height: 70%;
+  width: 100%;
+}
+
+.btnPurchase {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 3px;
+  background-color: black;
+  color: white;
+}
+
+.btnExplore {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 3px;
+  background-color: red;
+  color: white;
+}
+
+.btnExplore:hover {
+  color: yellowgreen;
+}
+
+.btnPurchase:hover {
+  color: yellowgreen;
+}
