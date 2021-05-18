@@ -1,12 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  box-sizing: border-box;
-}
-
 header {
   height: 200px;
   width: 100%;
@@ -17,42 +8,35 @@ header {
 }
 
 .headerBike {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  margin: auto;
   max-width: 20%;
-  max-height: 100%;
 }
 
 body {
+  margin: 0;
   background-color: olive;
 }
 
-nav {
-  height: 50px;
+#nav {
   width: 100%;
   background-color: black;
 }
 
 ul {
-  list-style: none;
+  margin: 0;
   padding: 0;
-  position: absolute;
+  display: flex;
+  padding: 0;
 }
 
-ul li {
-  float: left;
-  margin-top: 10px;
-  text-align: center;
+li {
+  margin-left: 20px;
 }
 
-ul li a {
+a {
+  text-decoration: none;
   color: white;
   display: block;
-  width: 150px;
-  text-align: center;
-  padding: 10px;
 }
 
 ul li ul li {
@@ -74,8 +58,43 @@ a:hover {
   transition: 0.5s;
 }
 
-#productsSection {
-  display: block;
+@media only screen and (max-width: 500px) {
+  /*shows elements in a column*/
+  ul {
+    flex-direction: column;
+  }
+
+  /* deletes margin on top or bottom of the a tag*/
+  li {
+    margin: 0;
+  }
+  /* makes sure that the a tag will take the entire screen*/
+  a {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  button {
+    /*makes the button visible*/
+    display: block;
+
+    /*since we are here, we can style it a little bit!*/
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #afe0ff;
+    border: none;
+
+    /*outline none removes the default blue border that appears anytime you click on the button*/
+    outline: none;
+
+    cursor: pointer;
+    align-self: flex-start;
+  }
+}
+
+button {
+  display: none;
 }
 
 #hondaHeader {
