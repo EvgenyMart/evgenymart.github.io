@@ -58,29 +58,6 @@ a:hover {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 500px) {
-  /*shows elements in a column*/
-  ul {
-    flex-direction: column;
-  }
-
-  /* deletes margin on top or bottom of the a tag*/
-  li {
-    margin: 0;
-  }
-  /* makes sure that the a tag will take the entire screen*/
-  a {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  button {
-    /*makes the button visible*/
-    display: block;
-
-    /*since we are here, we can style it a little bit!*/
-    padding: 2vw;
 #hondaHeader {
   margin-top: 15px;
   margin-left: 50px;
