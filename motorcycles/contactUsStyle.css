@@ -47,7 +47,7 @@ input {
   }
 
   body {
-    background-color: black;
+    background-color: yellow;
     background-image: url("pics/fox.png");
     background-size: contain;
   }
