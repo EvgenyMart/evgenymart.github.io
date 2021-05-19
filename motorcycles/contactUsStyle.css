@@ -44,6 +44,7 @@ input {
   #main {
     display: flex;
     flex-direction: column;
+    width: 350px;
   }
 
   body {
@@ -54,12 +55,10 @@ input {
   #box-1 {
     order: 1;
     color: white;
-    width: 200px;
   }
   #box-2 {
     order: 2;
     flex-direction: column;
-    width: min-content;
   }
 
   input {
