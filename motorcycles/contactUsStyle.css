@@ -38,7 +38,7 @@ input {
 
 @media only screen and (max-width: 375px) {
   * {
-    font-size: 8px;
+    font-size: 15px;
   }
 
   #main {
@@ -49,9 +49,9 @@ input {
 
   body {
     background-color: black;
-    background-image: url("pics/fox.png");
-    background-size: contain;
+    background-image: none;
   }
+
   #box-1 {
     order: 1;
     color: white;
@@ -63,5 +63,12 @@ input {
 
   input {
     display: flex;
+  }
+
+  #box-3 {
+    background-image: url("pics/fox.png");
+    background-size: cover;
+    flex-basis: 10rem;
+    order: 3;
   }
 }
