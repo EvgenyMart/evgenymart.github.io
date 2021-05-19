@@ -59,7 +59,7 @@ input {
   #box-2 {
     order: 2;
     flex-direction: column;
-    width: min-content;
+    width: 300px;
   }
 
   input {
