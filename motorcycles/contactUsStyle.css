@@ -21,7 +21,7 @@ body {
 
 #box-1 {
   order: 1;
-  color: black;
+  color: rgb(21, 21, 95);
 }
 
 #box-2 {
@@ -67,7 +67,9 @@ input {
 
   #box-3 {
     background-image: url("pics/fox.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
     flex-basis: 10rem;
     order: 3;
   }

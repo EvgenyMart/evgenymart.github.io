@@ -59,16 +59,24 @@ a:hover {
   transition: 0.5s;
 }
 
+#productsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #hondaHeader {
+  order: 1;
   margin-top: 15px;
   margin-left: 50px;
 }
 
 .product {
+  order: 2;
   display: inline-block;
+  text-align: center;
   width: 200px;
   height: 200px;
-  text-align: center;
 }
 
 .pic {
