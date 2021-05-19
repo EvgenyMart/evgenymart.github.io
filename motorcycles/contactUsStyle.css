@@ -10,19 +10,59 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-form {
-  margin-top: 10px;
-  margin-left: 20px;
-  padding: 7px;
-  background-color: darkkhaki;
-  width: 30%;
-  height: fit-content;
-  border-radius: 5px;
+
+#main {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 10vw;
+  margin-left: 5vw;
+}
+
+#box-1 {
+  order: 1;
+  color: black;
+}
+
+#box-2 {
+  background-color: darkkhaki;
+  border-radius: 5px;
+  order: 2;
+  flex-direction: column;
+  width: 100%;
 }
 
 input {
-  margin: 3px;
+  display: flex;
+}
+
+@media only screen and (max-width: 375px) {
+  * {
+    font-size: 8px;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    background-color: black;
+    background-image: url("pics/fox.png");
+    background-size: contain;
+  }
+  #box-1 {
+    order: 1;
+    color: white;
+    width: 200px;
+  }
+  #box-2 {
+    order: 2;
+    flex-direction: column;
+    width: min-content;
+  }
+
+  input {
+    display: flex;
+  }
 }
